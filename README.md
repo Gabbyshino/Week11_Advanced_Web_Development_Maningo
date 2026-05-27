@@ -18,7 +18,7 @@ A hands-on web security lab demonstrating **CSRF Protection** and **XSS Preventi
 1. Open `app/Config/Filters.php`
 2. Check that `'csrf'` is inside the `$globals['before']` array
 3. The code should look like this:
-```php
+###```php
 public $globals = [
     'before' => [
         'csrf',
@@ -26,7 +26,7 @@ public $globals = [
     'after' => [
         'toolbar',
     ],
-];
+]; ###
 
 ### Test CSRF Protection (TASK 02)
 1. Open `app/Views/form_view.php`
