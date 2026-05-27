@@ -19,7 +19,7 @@ A hands-on web security lab demonstrating **CSRF Protection** and **XSS Preventi
 2. Check that `'csrf'` is inside the `$globals['before']` array
 3. The code should look like this:
 
-```php
+    ```php
 public $globals = [
     'before' => [
         'csrf',
@@ -29,7 +29,7 @@ public $globals = [
     ],
 ];
 
-Test CSRF Protection (TASK 02)
+## Test CSRF Protection (TASK 02)
 Open app/Views/form_view.php
 
 Comment out <?= csrf_field() ?>
@@ -38,7 +38,7 @@ Submit the form → You'll see a 403 Forbidden error
 
 Uncomment the line to restore normal function
 
-Test XSS Protection (TASK 03)
+### Test XSS Protection (TASK 03)
 Type <b>John</b> in the Name field
 
 Submit → Shows as plain text, NOT bold
@@ -47,8 +47,8 @@ Type <script>alert('XSS')</script> in the Comment field
 
 Submit → No popup alert appears
 
-🚀 Installation
-bash
+### 🚀 Installation
+    ``` bash
 git clone https://github.com/YOUR_USERNAME/antihackerlab.git
 cd antihackerlab
 composer install
@@ -56,8 +56,8 @@ cp env .env
 php spark serve
 Then visit http://localhost:8080
 
-📁 Project Structure
-text
+### 📁 Project Structure
+    ``` text
 antihackerlab/
 ├── app/
 │   ├── Config/
