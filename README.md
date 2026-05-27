@@ -18,6 +18,7 @@ A hands-on web security lab demonstrating **CSRF Protection** and **XSS Preventi
 1. Open `app/Config/Filters.php`
 2. Check that `'csrf'` is inside the `$globals['before']` array
 3. The code should look like this:
+
    ```php
 public $globals = [
     'before' => [
@@ -26,7 +27,7 @@ public $globals = [
     'after' => [
         'toolbar',
     ],
-]; 
+]; #
 
 ### Test CSRF Protection (TASK 02)
 1. Open `app/Views/form_view.php`
@@ -47,4 +48,4 @@ git clone https://github.com/YOUR_USERNAME/antihackerlab.git
 cd antihackerlab
 composer install
 cp env .env
-php spark serve 
+php spark serve #
