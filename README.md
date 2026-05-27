@@ -14,6 +14,20 @@ A hands-on web security lab demonstrating **CSRF Protection** and **XSS Preventi
 
 ## 🧪 How to Test
 
+### Test CSRF Filter Enabled (TASK 01)
+1. Open `app/Config/Filters.php`
+2. Check that `'csrf'` is inside the `$globals['before']` array
+3. The code should look like this:
+```php
+public $globals = [
+    'before' => [
+        'csrf',
+    ],
+    'after' => [
+        'toolbar',
+    ],
+];
+
 ### Test CSRF Protection (TASK 02)
 1. Open `app/Views/form_view.php`
 2. Comment out `<?= csrf_field() ?>`
